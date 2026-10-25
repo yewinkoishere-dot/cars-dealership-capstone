@@ -1,0 +1,16 @@
+curl -X GET http://localhost:3000/fetchReviews/dealer/15
+
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "dealership": 15,
+    "review": "Great service and smooth purchasing experience!",
+    "purchase": true,
+    "purchase_date": "02/15/2024",
+    "car_make": "Toyota",
+    "car_model": "Camry",
+    "car_year": 2022,
+    "sentiment": "positive"
+  }
+]
