@@ -1,0 +1,13 @@
+curl -X GET http://localhost:3000/fetchDealer/15
+
+{
+  "id": 15,
+  "city": "Dallas",
+  "state": "Texas",
+  "st": "TX",
+  "address": "123 Main Street",
+  "zip": "75201",
+  "lat": "32.7767",
+  "long": "-96.7970",
+  "full_name": "Best National Dealership"
+}
