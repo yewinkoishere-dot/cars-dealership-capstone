@@ -1,7 +1,5 @@
-# xrwvm-fullstack_developer_capstone
+# Repository Name: xrwvm-fullstack_developer_capstone
+# Project Name: fullstack_developer_capstone
 
-## Project Name
-fullstack_developer_capstone
-
-## Description
-A responsive national car dealership web application built using Django, React, Node.js, Express, MongoDB, and SQLite.
+## Full-Stack Development Capstone Project
+This repository contains the capstone project for the Full-Stack Developer course, featuring a Django backend, React frontend, and Node/Express backend microservices for a car dealership application.
