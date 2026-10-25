@@ -1,101 +1,68 @@
-import React, { useState } from "react";
-import "./Register.css";
+
+import React from "react";
 
 const Register = () => {
-  const [userName, setUserName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+    return (
+        <div className="container mt-5">
+            <h2 className="text-center mb-4">Sign-up</h2>
 
-  const register = async (e) => {
-    e.preventDefault();
-    let register_url = window.location.origin + "/djangoapp/register";
+            <form>
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Username"
+                        name="username"
+                        required
+                    />
+                </div>
 
-    const res = await fetch(register_url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        userName: userName,
-        password: password,
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-      }),
-    });
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="First Name"
+                        name="firstName"
+                        required
+                    />
+                </div>
 
-    const json = await res.json();
-    if (json.status === "Authenticated") {
-      window.location.href = window.location.origin;
-    } else {
-      alert("Registration failed");
-    }
-  };
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Last Name"
+                        name="lastName"
+                        required
+                    />
+                </div>
 
-  return (
-    <div className="register_container">
-      <div className="header">
-        <span className="text">Sign Up</span>
-      </div>
-      <form onSubmit={register} className="inputs">
-        <div className="input">
-          <input
-            type="text"
-            name="username"
-            placeholder="Username"
-            className="input_field"
-            onChange={(e) => setUserName(e.target.value)}
-            required
-          />
+                <div className="mb-3">
+                    <input
+                        type="email"
+                        className="form-control"
+                        placeholder="email"
+                        name="email"
+                        required
+                    />
+                </div>
+
+                <div className="mb-3">
+                    <input
+                        type="password"
+                        className="form-control"
+                        placeholder="Password"
+                        name="password"
+                        required
+                    />
+                </div>
+
+                <button type="submit" className="btn btn-primary">
+                    Register
+                </button>
+            </form>
         </div>
-        <div className="input">
-          <input
-            type="text"
-            name="first_name"
-            placeholder="First Name"
-            className="input_field"
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <input
-            type="text"
-            name="last_name"
-            placeholder="Last Name"
-            className="input_field"
-            onChange={(e) => setLastName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <input
-            type="email"
-            name="email"
-            placeholder="email"
-            className="input_field"
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="input_field"
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div className="submit_panel">
-          <input className="submit" type="submit" value="Register" />
-        </div>
-      </form>
-    </div>
-  );
+    );
 };
 
 export default Register;
