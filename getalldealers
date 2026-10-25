@@ -1,0 +1,26 @@
+curl -X GET http://localhost:3000/fetchDealers
+
+[
+  {
+    "id": 1,
+    "city": "El Paso",
+    "state": "Texas",
+    "st": "TX",
+    "address": "3 West End Court",
+    "zip": "79915",
+    "lat": "31.7913",
+    "long": "-106.3828",
+    "full_name": "Holdfast Auto Dealership"
+  },
+  {
+    "id": 15,
+    "city": "Dallas",
+    "state": "Texas",
+    "st": "TX",
+    "address": "123 Main Street",
+    "zip": "75201",
+    "lat": "32.7767",
+    "long": "-96.7970",
+    "full_name": "Best National Dealership"
+  }
+]
