@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Best Cars Dealership</title>
 
-    <!-- Required CSS stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Required CSS links -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Best Cars</a>
+        <div class="container">
+            <a class="navbar-brand" href="/">Best Cars Dealership</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/about" aria-current="page">About Us</a>
+                        <a class="nav-link active" href="/about"
+                           aria-current="page">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact Us</a>
@@ -34,82 +44,100 @@
     </nav>
 
     <!-- About Us -->
-    <main class="container mt-5">
+    <main class="container my-5">
         <section class="text-center mb-5">
             <h1>About Us</h1>
-            <p class="lead mt-3">
-                Welcome to Best Cars dealership, home to the best cars in North America.
-                We deal in sale of domestic and imported cars at reasonable prices.
+            <p class="lead">
+                Welcome to Best Cars Dealership, home to the best cars
+                in North America. We deal in the sale of domestic and
+                imported cars at reasonable prices. Our team is committed
+                to helping every customer find a vehicle that suits
+                their needs and budget.
             </p>
         </section>
 
-        <div class="row text-center">
+        <!-- Team Members -->
+        <section>
+            <h2 class="text-center mb-4">Meet Our Team</h2>
 
-            <!-- Mily -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm p-3">
-                    <img
-                        src="https://mark.skills.network/static/image2.jpg"
-                        class="rounded-circle mx-auto mb-3"
-                        width="150"
-                        height="150"
-                        alt="Mily, Front End Engineer">
+            <div class="row g-4">
 
-                    <div class="card-body">
-                        <h3 class="card-title">Mily</h3>
-                        <p class="text-muted">Engineer</p>
-                        <p class="card-text">Hi I am Mily.I am a front end engineer</p>
-                        <p><strong>mily@gmail.com</strong></p>
+                <!-- Mily -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://mark.skills.network/static/image2.jpg"
+                            class="card-img-top"
+                            alt="Mily, Front End Engineer">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mily</h3>
+                            <h4 class="h5">Engineer</h4>
+                            <p class="card-text">
+                                Hi, I am Mily. I am a front end engineer
+                                responsible for creating user-friendly
+                                dealership web pages.
+                            </p>
+                            <a href="mailto:mily@gmail.com">
+                                mily@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- John Smith -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm p-3">
-                    <img
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
-                        class="rounded-circle mx-auto mb-3"
-                        width="150"
-                        height="150"
-                        alt="John Smith, Chief Executive Officer">
-
-                    <div class="card-body">
-                        <h3 class="card-title">John Smith</h3>
-                        <p class="text-muted">Chief Executive Officer</p>
-                        <p class="card-text">
-                            John leads company strategy and oversees dealership operations
-                            and business development.
-                        </p>
-                        <p><strong>john.smith@bestcars.com</strong></p>
+                <!-- John Smith -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top"
+                            alt="John Smith, Dealership Manager">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">John Smith</h3>
+                            <h4 class="h5">Dealership Manager</h4>
+                            <p class="card-text">
+                                John oversees daily dealership operations
+                                and works to provide customers with
+                                reliable vehicles and helpful service.
+                            </p>
+                            <a href="mailto:john.smith@bestcars.com">
+                                john.smith@bestcars.com
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Sarah Johnson -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm p-3">
-                    <img
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
-                        class="rounded-circle mx-auto mb-3"
-                        width="150"
-                        height="150"
-                        alt="Sarah Johnson, Vice President of Sales">
-
-                    <div class="card-body">
-                        <h3 class="card-title">Sarah Johnson</h3>
-                        <p class="text-muted">VP of Sales</p>
-                        <p class="card-text">
-                            Sarah manages sales operations and helps customers find
-                            suitable domestic and imported vehicles.
-                        </p>
-                        <p><strong>sarah.johnson@bestcars.com</strong></p>
+                <!-- Sarah Johnson -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top"
+                            alt="Sarah Johnson, Sales Manager">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Sarah Johnson</h3>
+                            <h4 class="h5">Sales Manager</h4>
+                            <p class="card-text">
+                                Sarah helps customers explore vehicle
+                                options, understand pricing, and choose
+                                a car that fits their requirements.
+                            </p>
+                            <a href="mailto:sarah.johnson@bestcars.com">
+                                sarah.johnson@bestcars.com
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2026 Best Cars Dealership. All rights reserved.
+        </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
